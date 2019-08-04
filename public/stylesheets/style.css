@@ -1,0 +1,135 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0 0;
+  color: #fff;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f64f59;
+  background: -webkit-linear-gradient(to bottom, #d16d73, #ad8ebc);
+  background: linear-gradient(to bottom, #d16d73, #ad8ebc);
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 300;
+  font-family: 'Noto Serif', serif;
+  letter-spacing: -2.5px;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 300;
+  font-family: 'Noto Serif', serif;
+  letter-spacing: -1.5px;
+}
+
+#wrapper {
+  text-align: center;
+  max-width: 500px;
+  margin: 2em auto;
+  padding: 0 0.5em;
+}
+
+#typeOfInput {
+  margin-bottom: 10px;
+}
+
+.support {
+  display: block;
+  font-weight: 600;
+  font-size: 3em;
+  color: #58485f;
+  letter-spacing: -2.5px;
+}
+
+.hidden {
+  display: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+small {
+  font-weight: 600;
+  color: #58485f;
+}
+
+p {
+  text-align: left;
+}
+
+#speechButton {
+  margin: 10px auto;
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-image: url(../images/mic.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#speechButton:hover {
+  cursor: pointer;
+}
+
+.start {
+  background: #63c4c0
+}
+
+.stop {
+  background: #c73970;
+}
+
+#transcription {
+  display: block;
+  resize: none;
+  width: 100%;
+  height: 5em;
+  font-size: 1em;
+  overflow-y: scroll;
+  color: #333;
+  border: 1px solid #fff;
+  line-height: 1.3em;
+  border-radius: 4px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.button {
+  padding: 0.6em 0.8em;
+  display: inline-block;
+  margin: 1em;
+  background-color: rgba(237, 137, 0, 0);
+  border: 1px solid #fff;
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#reviews {
+  max-height: 300px;
+  overflow: auto;
+}

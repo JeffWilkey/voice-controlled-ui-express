@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=UTF-8>
+  <meta name=viewport content="width=device-width,initial-scale=1">
+  <title>Web Speech API</title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <h1>Product Reviews</h1>
+    <div id="reviews"></div>
+    <span id="unsupported" class="support hidden">Speech API Not Supported</span>
+    <h2>Your Message:</h2>
+    <div id="typeOfInput">
+      <span>Results:</span>
+      <label>
+        <input type="radio" name="recognition-type" value="final">
+        Final speech
+      </label>
+      <label>
+        <input type="radio" name="recognition-type" value="interim" checked>
+        As you speak
+      </label>
+    </div>
+    <textarea id="transcription" readonly></textarea>
+    <br />
+    <button id="clear-all" class="button">Clear Text</button>
+    <button id="submit" class="button">Submit Review</button>
+    <div classs="button-wrapper">
+      <div id="speechButton" class="start"></div>
+    </div>
+    <div id="log">Click to start speaking</div>
+  </div>
+  <script type="text/javascript" src="javascripts/getData.js"></script>
+  <script type="text/javascript" src="javascripts/speech.js"></script>
+</body>
+
+</html>
